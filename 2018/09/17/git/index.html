@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>来自小白的git入门blog | carxinho</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="本文将通过截图+简单描述来写一下git init、git add和git commit -v这三个命令的使用，有兴趣就继续看下去吧。 git init —— 初始化仓库要用Git进行版本管理，必须先要初始化仓库。Git使用git init命令初始化仓库。首先建立一个空的目录，初始化成功，该目录下就会生成一个.git目录。.git目录中存放着管理当前目录所需的仓库数据。 git add —— 向暂存">
+<meta property="og:type" content="article">
+<meta property="og:title" content="来自小白的git入门blog">
+<meta property="og:url" content="http://yoursite.com/2018/09/17/git/index.html">
+<meta property="og:site_name" content="carxinho">
+<meta property="og:description" content="本文将通过截图+简单描述来写一下git init、git add和git commit -v这三个命令的使用，有兴趣就继续看下去吧。 git init —— 初始化仓库要用Git进行版本管理，必须先要初始化仓库。Git使用git init命令初始化仓库。首先建立一个空的目录，初始化成功，该目录下就会生成一个.git目录。.git目录中存放着管理当前目录所需的仓库数据。 git add —— 向暂存">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2018/09/17/git/init/init.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/17/git/add/add.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/17/git/commit-v/commit-v.png">
+<meta property="og:updated_time" content="2018-09-16T17:53:56.539Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="来自小白的git入门blog">
+<meta name="twitter:description" content="本文将通过截图+简单描述来写一下git init、git add和git commit -v这三个命令的使用，有兴趣就继续看下去吧。 git init —— 初始化仓库要用Git进行版本管理，必须先要初始化仓库。Git使用git init命令初始化仓库。首先建立一个空的目录，初始化成功，该目录下就会生成一个.git目录。.git目录中存放着管理当前目录所需的仓库数据。 git add —— 向暂存">
+<meta name="twitter:image" content="http://yoursite.com/2018/09/17/git/init/init.png">
+  
+    <link rel="alternate" href="/atom.xml" title="carxinho" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">carxinho</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-git" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/17/git/" class="article-date">
+  <time datetime="2018-09-16T17:24:16.076Z" itemprop="datePublished">2018-09-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      来自小白的git入门blog
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本文将通过截图+简单描述来写一下git init、git add和git commit -v这三个命令的使用，有兴趣就继续看下去吧。</p>
+<h3 id="git-init-——-初始化仓库"><a href="#git-init-——-初始化仓库" class="headerlink" title="git init —— 初始化仓库"></a>git init —— 初始化仓库</h3><p>要用Git进行版本管理，必须先要初始化仓库。Git使用git init命令初始化仓库。首先建立一个空的目录，初始化成功，该目录下就会生成一个.git目录。.git目录中存放着管理当前目录所需的仓库数据。<br><img src="/2018/09/17/git/init/init.png" alt="init"></p>
+<h3 id="git-add-——-向暂存区添加文件"><a href="#git-add-——-向暂存区添加文件" class="headerlink" title="git add —— 向暂存区添加文件"></a>git add —— 向暂存区添加文件</h3><p>要想让文件成为Git的管理对象，需要通过git add 命令将其加入暂存区。暂存区是提交前的一个临时区域。可以看到css文件、js文件与html文件前的标识不一样，这是因为我们通过git add可以把html文件放置在暂存区，使用此命令便可把红色的??变成了绿色的A。<br><img src="/2018/09/17/git/add/add.png" alt="add"></p>
+<h3 id="git-commit-v-——-查看未提交的文件"><a href="#git-commit-v-——-查看未提交的文件" class="headerlink" title="git commit -v —— 查看未提交的文件"></a>git commit -v —— 查看未提交的文件</h3><p>git commit -m ‘message’ 可以提交短的消息。如果要提交详细的描述，直接运行git commit 然后编辑器自动运行。如果想要查看是否有文件没有提交，可以运行git commit -v 来查看未提交的文件。<br><img src="/2018/09/17/git/commit-v/commit-v.png" alt="commit -v"></p>
+<p>###一些碎碎念<br>现在还是个小白，也不知道有没有写错，以后会回来不坑的！</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/17/git/" data-id="cjm55wihn0001ukuqauvdiz4d" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/09/16/explainshell/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Linux命令之ls、cat、mv、touch的使用方法，以及遇到不明白的命令怎么办？</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/09/17/git/">来自小白的git入门blog</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/16/explainshell/">Linux命令之ls、cat、mv、touch的使用方法，以及遇到不明白的命令怎么办？</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 carxinho<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

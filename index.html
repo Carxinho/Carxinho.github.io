@@ -62,6 +62,47 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-git" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/17/git/" class="article-date">
+  <time datetime="2018-09-16T17:24:16.076Z" itemprop="datePublished">2018-09-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/17/git/">来自小白的git入门blog</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本文将通过截图+简单描述来写一下git init、git add和git commit -v这三个命令的使用，有兴趣就继续看下去吧。</p>
+<h3 id="git-init-——-初始化仓库"><a href="#git-init-——-初始化仓库" class="headerlink" title="git init —— 初始化仓库"></a>git init —— 初始化仓库</h3><p>要用Git进行版本管理，必须先要初始化仓库。Git使用git init命令初始化仓库。首先建立一个空的目录，初始化成功，该目录下就会生成一个.git目录。.git目录中存放着管理当前目录所需的仓库数据。<br><img src="/2018/09/17/git/init/init.png" alt="init"></p>
+<h3 id="git-add-——-向暂存区添加文件"><a href="#git-add-——-向暂存区添加文件" class="headerlink" title="git add —— 向暂存区添加文件"></a>git add —— 向暂存区添加文件</h3><p>要想让文件成为Git的管理对象，需要通过git add 命令将其加入暂存区。暂存区是提交前的一个临时区域。可以看到css文件、js文件与html文件前的标识不一样，这是因为我们通过git add可以把html文件放置在暂存区，使用此命令便可把红色的??变成了绿色的A。<br><img src="/2018/09/17/git/add/add.png" alt="add"></p>
+<h3 id="git-commit-v-——-查看未提交的文件"><a href="#git-commit-v-——-查看未提交的文件" class="headerlink" title="git commit -v —— 查看未提交的文件"></a>git commit -v —— 查看未提交的文件</h3><p>git commit -m ‘message’ 可以提交短的消息。如果要提交详细的描述，直接运行git commit 然后编辑器自动运行。如果想要查看是否有文件没有提交，可以运行git commit -v 来查看未提交的文件。<br><img src="/2018/09/17/git/commit-v/commit-v.png" alt="commit -v"></p>
+<p>###一些碎碎念<br>现在还是个小白，也不知道有没有写错，以后会回来不坑的！</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/17/git/" data-id="cjm55wihn0001ukuqauvdiz4d" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-explainshell" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/09/16/explainshell/" class="article-date">
@@ -109,13 +150,13 @@
 <h3 id="touch的命令语法"><a href="#touch的命令语法" class="headerlink" title="touch的命令语法"></a>touch的命令语法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ touch [文件]</span><br></pre></td></tr></table></figure>
 <p>–当touch一个不存在的文件时会创建此文件，而当touch一个已存在的文件时即修改了文件的修改时间。</p>
 <h2 id="命令解释神器-explainshell-com"><a href="#命令解释神器-explainshell-com" class="headerlink" title="命令解释神器 explainshell.com"></a>命令解释神器 explainshell.com</h2><p>命令成千上万，当我们遇到不明白的命令时候该怎么办呢？此时命令解释神器：<a href="https://explainshell.com/" target="_blank" rel="noopener">explainshell</a>便可帮到你，接下来我简单介绍一下其使用方法。</p>
-<p><img src="/2018/09/16/explainshell/explainshell.png" alt="explainshell.com"></p>
+<p><img src="/2018/09/16/explainshell/explainshell.png" alt="explainshell"></p>
 <p>你只需打开命令解释神器：<a href="https://explainshell.com/" target="_blank" rel="noopener">explainshell</a>，输入你想要查询的语句便会出现如上图所示的解释，当你想了解此命令中某一命令，只需指向其，其解释便会高亮显示了。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/16/explainshell/" data-id="cjm54c48a0000lcuqomjso6dd" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/16/explainshell/" data-id="cjm55wihd0000ukuq0x7cvau2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -154,6 +195,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/09/17/git/">来自小白的git入门blog</a>
+          </li>
         
           <li>
             <a href="/2018/09/16/explainshell/">Linux命令之ls、cat、mv、touch的使用方法，以及遇到不明白的命令怎么办？</a>
