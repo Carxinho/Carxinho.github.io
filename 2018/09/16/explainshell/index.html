@@ -15,7 +15,7 @@
 <meta property="og:description" content="ls的命令概述ls命令的英文全名是List即列表的意思，用于显示文件目录列表，和Windows系统下DOS命令dir类似。当执行ls命令时，可列出目录下的非隐藏文件（在Linux下，文件名以点.开头表示该文件为隐藏文件，如.bashrc）。ls命令使用频率非常高，参数也非常多，下面介绍了一部分常用的参数，其他参数可以通过man命令查看帮助手册。 ls的命令语法1$ ls -a [目录或文件] –a">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/2018/09/16/explainshell/explainshell.png">
-<meta property="og:updated_time" content="2018-09-16T17:14:49.445Z">
+<meta property="og:updated_time" content="2018-09-18T09:14:48.096Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux命令之ls、cat、mv、touch的使用方法，以及遇到不明白的命令怎么办？">
 <meta name="twitter:description" content="ls的命令概述ls命令的英文全名是List即列表的意思，用于显示文件目录列表，和Windows系统下DOS命令dir类似。当执行ls命令时，可列出目录下的非隐藏文件（在Linux下，文件名以点.开头表示该文件为隐藏文件，如.bashrc）。ls命令使用频率非常高，参数也非常多，下面介绍了一部分常用的参数，其他参数可以通过man命令查看帮助手册。 ls的命令语法1$ ls -a [目录或文件] –a">
@@ -89,28 +89,28 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="ls的命令概述"><a href="#ls的命令概述" class="headerlink" title="ls的命令概述"></a>ls的命令概述</h2><p>ls命令的英文全名是List即列表的意思，用于显示文件目录列表，和Windows系统下DOS命令dir类似。当执行ls命令时，可列出目录下的非隐藏文件（在Linux下，文件名以点.开头表示该文件为隐藏文件，如.bashrc）。ls命令使用频率非常高，参数也非常多，下面介绍了一部分常用的参数，其他参数可以通过man命令查看帮助手册。</p>
-<h3 id="ls的命令语法"><a href="#ls的命令语法" class="headerlink" title="ls的命令语法"></a>ls的命令语法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -a [目录或文件]</span><br></pre></td></tr></table></figure>
+<h3 id="ls的命令语法"><a href="#ls的命令语法" class="headerlink" title="ls的命令语法"></a>ls的命令语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -a [目录或文件]</span><br></pre></td></tr></table></figure>
 <p>–all的缩写，显示所有的文件，包括隐藏文件(以.开头的文件)。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -d [目录或文件]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -d [目录或文件]</span><br></pre></td></tr></table></figure>
 <p>—-directory的缩写，仅列出目录本身，而不是列出目录里的内容列表。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -l [目录或文件]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -l [目录或文件]</span><br></pre></td></tr></table></figure>
 <p>–列出长数据串，显示出文件的属性与权限等数据信息。</p>
 <h2 id="cat的命令概述"><a href="#cat的命令概述" class="headerlink" title="cat的命令概述"></a>cat的命令概述</h2><p>cat命令用于连接文件或标准输入并打印。这个命令常用来显示文件内容，或者将几个文件连接起来显示。</p>
-<h3 id="cat的命令语法"><a href="#cat的命令语法" class="headerlink" title="cat的命令语法"></a>cat的命令语法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cat [文件]</span><br></pre></td></tr></table></figure>
+<h3 id="cat的命令语法"><a href="#cat的命令语法" class="headerlink" title="cat的命令语法"></a>cat的命令语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cat [文件]</span><br></pre></td></tr></table></figure>
 <p>–查看文件内容。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cat [文件] | grep [查找内容]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cat [文件] | grep [查找内容]</span><br></pre></td></tr></table></figure>
 <p>–查看文件中的内容并显示包含查找内容的内容。</p>
 <h2 id="mv的命令概述"><a href="#mv的命令概述" class="headerlink" title="mv的命令概述"></a>mv的命令概述</h2><p>mv命令是move的缩写，可以用来移动文件或者将文件改名，这也是个常用命令，经常用来备份文件或者目录。</p>
-<h3 id="mv的命令语法"><a href="#mv的命令语法" class="headerlink" title="mv的命令语法"></a>mv的命令语法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mv [文件1] [文件2]</span><br></pre></td></tr></table></figure>
+<h3 id="mv的命令语法"><a href="#mv的命令语法" class="headerlink" title="mv的命令语法"></a>mv的命令语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mv [文件1] [文件2]</span><br></pre></td></tr></table></figure>
 <p>–将文件1覆盖到文件2。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mv [文件] [文件夹]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mv [文件] [文件夹]</span><br></pre></td></tr></table></figure>
 <p>–将文件移动到文件夹。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mv -i [文件1] [文件2]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mv -i [文件1] [文件2]</span><br></pre></td></tr></table></figure>
 <p>–将文件1覆盖到文件2时会询问是否覆盖。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mv -f [文件1] [文件2]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mv -f [文件1] [文件2]</span><br></pre></td></tr></table></figure>
 <p>–将文件1覆盖到文件2时不管文件2是否存在均会强行覆盖。</p>
 <h2 id="touch的命令概述"><a href="#touch的命令概述" class="headerlink" title="touch的命令概述"></a>touch的命令概述</h2><p>touch指令用来修改文件时间戳，或者新建一个不存在的文件。</p>
-<h3 id="touch的命令语法"><a href="#touch的命令语法" class="headerlink" title="touch的命令语法"></a>touch的命令语法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ touch [文件]</span><br></pre></td></tr></table></figure>
+<h3 id="touch的命令语法"><a href="#touch的命令语法" class="headerlink" title="touch的命令语法"></a>touch的命令语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ touch [文件]</span><br></pre></td></tr></table></figure>
 <p>–当touch一个不存在的文件时会创建此文件，而当touch一个已存在的文件时即修改了文件的修改时间。</p>
 <h2 id="命令解释神器-explainshell-com"><a href="#命令解释神器-explainshell-com" class="headerlink" title="命令解释神器 explainshell.com"></a>命令解释神器 explainshell.com</h2><p>命令成千上万，当我们遇到不明白的命令时候该怎么办呢？此时命令解释神器：<a href="https://explainshell.com/" target="_blank" rel="noopener">explainshell</a>便可帮到你，接下来我简单介绍一下其使用方法。</p>
 <p><img src="/2018/09/16/explainshell/explainshell.png" alt="explainshell"></p>
@@ -119,7 +119,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/16/explainshell/" data-id="cjm7hmx4d0000fouqwo57b7fc" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/16/explainshell/" data-id="cjm7i7ipo0001zcuq6h0rv48x" class="article-share-link">Share</a>
       
       
     </footer>

@@ -90,7 +90,7 @@
 <h2 id="HTTP-响应"><a href="#HTTP-响应" class="headerlink" title="HTTP 响应"></a>HTTP 响应</h2><h3 id="HTTP-响应的组成部分"><a href="#HTTP-响应的组成部分" class="headerlink" title="HTTP 响应的组成部分"></a>HTTP 响应的组成部分</h3><p>1 协议/版本号 状态码 状态解释<br>2 Key1: value1<br>2 Key2: value2<br>2 Content-Length: 17931<br>2 Content-Type: text/html<br>3<br>4 要下载的内容</p>
 <p>关于以上各部分内容的碎碎念：<br>1.状态码要背，详情请<a href="https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81" target="_blank" rel="noopener">点击这</a><br>2.第 2 部分中的 Content-Type 遵循 MIME 规范，而且还标注了第 4 部分的格式，两者是一致的。</p>
 <h3 id="用-Chrome-查看响应"><a href="#用-Chrome-查看响应" class="headerlink" title="用 Chrome 查看响应"></a>用 Chrome 查看响应</h3><p>1.打开 Network<br>2.输入网址<br>3.选中第一个响应<br>4.查看 Response Headers，点击「view source」，一定要点否则看不到，点击后你能看到响应的前两部分<br>5.查看 Response 或者 Preview，你会看到响应的第 4 部分</p>
-<h2 id="curl命令"><a href="#curl命令" class="headerlink" title="curl命令"></a>curl命令</h2><p>输入以下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ curl -s -v -H <span class="string">"name: xxx"</span> -- <span class="string">"https://www.baidu.com"</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="curl命令"><a href="#curl命令" class="headerlink" title="curl命令"></a>curl命令</h2><p>输入以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ curl -s -v -H &quot;name: xxx&quot; -- &quot;https://www.baidu.com&quot;</span><br></pre></td></tr></table></figure></p>
 <p><img src="req-res/http1.png" alt="请求与响应"><br><img src="req-res/http2.png" alt="请求与响应"></p>
 <p>由上图可知，此刻：<br>请求的内容为：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; GET / HTTP/1.1</span><br><span class="line">&gt; Host: www.baidu.com</span><br><span class="line">&gt; User-Agent: curl/7.60.0</span><br><span class="line">&gt; Accept: */*</span><br><span class="line">&gt; name: xxx</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></p>
 <p>响应的内容为：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt; HTTP/1.1 200 OK</span><br><span class="line">&lt; Accept-Ranges: bytes</span><br><span class="line">&lt; Cache-Control: private, no-cache, no-store, proxy-revalidate, no-transform</span><br><span class="line">&lt; Connection: Keep-Alive</span><br><span class="line">&lt; Content-Length: 2443</span><br><span class="line">&lt; Content-Type: text/html</span><br><span class="line">&lt; Date: Mon, 17 Sep 2018 02:30:58 GMT</span><br><span class="line">&lt; Etag: <span class="string">"58860402-98b"</span></span><br><span class="line">&lt; Last-Modified: Mon, 23 Jan 2017 13:24:18 GMT</span><br><span class="line">&lt; Pragma: no-cache</span><br><span class="line">&lt; Server: bfe/1.0.8.18</span><br><span class="line">&lt; Set-Cookie: BDORZ=27315; max-age=86400; domain=.baidu.com; path=/</span><br><span class="line">&lt;</span><br><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;!--STATUS OK--&gt;&lt;html&gt; &lt;head&gt;&lt;meta http-equiv=content-type content=text/html;charset=utf-8&gt;后面太长，省略了……</span><br></pre></td></tr></table></figure></p>
@@ -98,7 +98,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/17/req-res/" data-id="cjm7hmx4x0002fouqu2jy1d4f" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/17/req-res/" data-id="cjm7i7ipy0003zcuqgzl68f89" class="article-share-link">Share</a>
       
       
     </footer>
@@ -139,7 +139,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/17/git/" data-id="cjm7hmx4n0001fouq7f560a7o" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/17/git/" data-id="cjm7i7ipo0002zcuql4suj0o7" class="article-share-link">Share</a>
       
       
     </footer>
@@ -172,28 +172,28 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="ls的命令概述"><a href="#ls的命令概述" class="headerlink" title="ls的命令概述"></a>ls的命令概述</h2><p>ls命令的英文全名是List即列表的意思，用于显示文件目录列表，和Windows系统下DOS命令dir类似。当执行ls命令时，可列出目录下的非隐藏文件（在Linux下，文件名以点.开头表示该文件为隐藏文件，如.bashrc）。ls命令使用频率非常高，参数也非常多，下面介绍了一部分常用的参数，其他参数可以通过man命令查看帮助手册。</p>
-<h3 id="ls的命令语法"><a href="#ls的命令语法" class="headerlink" title="ls的命令语法"></a>ls的命令语法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -a [目录或文件]</span><br></pre></td></tr></table></figure>
+<h3 id="ls的命令语法"><a href="#ls的命令语法" class="headerlink" title="ls的命令语法"></a>ls的命令语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -a [目录或文件]</span><br></pre></td></tr></table></figure>
 <p>–all的缩写，显示所有的文件，包括隐藏文件(以.开头的文件)。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -d [目录或文件]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -d [目录或文件]</span><br></pre></td></tr></table></figure>
 <p>—-directory的缩写，仅列出目录本身，而不是列出目录里的内容列表。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -l [目录或文件]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -l [目录或文件]</span><br></pre></td></tr></table></figure>
 <p>–列出长数据串，显示出文件的属性与权限等数据信息。</p>
 <h2 id="cat的命令概述"><a href="#cat的命令概述" class="headerlink" title="cat的命令概述"></a>cat的命令概述</h2><p>cat命令用于连接文件或标准输入并打印。这个命令常用来显示文件内容，或者将几个文件连接起来显示。</p>
-<h3 id="cat的命令语法"><a href="#cat的命令语法" class="headerlink" title="cat的命令语法"></a>cat的命令语法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cat [文件]</span><br></pre></td></tr></table></figure>
+<h3 id="cat的命令语法"><a href="#cat的命令语法" class="headerlink" title="cat的命令语法"></a>cat的命令语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cat [文件]</span><br></pre></td></tr></table></figure>
 <p>–查看文件内容。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cat [文件] | grep [查找内容]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cat [文件] | grep [查找内容]</span><br></pre></td></tr></table></figure>
 <p>–查看文件中的内容并显示包含查找内容的内容。</p>
 <h2 id="mv的命令概述"><a href="#mv的命令概述" class="headerlink" title="mv的命令概述"></a>mv的命令概述</h2><p>mv命令是move的缩写，可以用来移动文件或者将文件改名，这也是个常用命令，经常用来备份文件或者目录。</p>
-<h3 id="mv的命令语法"><a href="#mv的命令语法" class="headerlink" title="mv的命令语法"></a>mv的命令语法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mv [文件1] [文件2]</span><br></pre></td></tr></table></figure>
+<h3 id="mv的命令语法"><a href="#mv的命令语法" class="headerlink" title="mv的命令语法"></a>mv的命令语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mv [文件1] [文件2]</span><br></pre></td></tr></table></figure>
 <p>–将文件1覆盖到文件2。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mv [文件] [文件夹]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mv [文件] [文件夹]</span><br></pre></td></tr></table></figure>
 <p>–将文件移动到文件夹。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mv -i [文件1] [文件2]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mv -i [文件1] [文件2]</span><br></pre></td></tr></table></figure>
 <p>–将文件1覆盖到文件2时会询问是否覆盖。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mv -f [文件1] [文件2]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mv -f [文件1] [文件2]</span><br></pre></td></tr></table></figure>
 <p>–将文件1覆盖到文件2时不管文件2是否存在均会强行覆盖。</p>
 <h2 id="touch的命令概述"><a href="#touch的命令概述" class="headerlink" title="touch的命令概述"></a>touch的命令概述</h2><p>touch指令用来修改文件时间戳，或者新建一个不存在的文件。</p>
-<h3 id="touch的命令语法"><a href="#touch的命令语法" class="headerlink" title="touch的命令语法"></a>touch的命令语法</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ touch [文件]</span><br></pre></td></tr></table></figure>
+<h3 id="touch的命令语法"><a href="#touch的命令语法" class="headerlink" title="touch的命令语法"></a>touch的命令语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ touch [文件]</span><br></pre></td></tr></table></figure>
 <p>–当touch一个不存在的文件时会创建此文件，而当touch一个已存在的文件时即修改了文件的修改时间。</p>
 <h2 id="命令解释神器-explainshell-com"><a href="#命令解释神器-explainshell-com" class="headerlink" title="命令解释神器 explainshell.com"></a>命令解释神器 explainshell.com</h2><p>命令成千上万，当我们遇到不明白的命令时候该怎么办呢？此时命令解释神器：<a href="https://explainshell.com/" target="_blank" rel="noopener">explainshell</a>便可帮到你，接下来我简单介绍一下其使用方法。</p>
 <p><img src="/2018/09/16/explainshell/explainshell.png" alt="explainshell"></p>
@@ -202,7 +202,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/16/explainshell/" data-id="cjm7hmx4d0000fouqwo57b7fc" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/16/explainshell/" data-id="cjm7i7ipo0001zcuq6h0rv48x" class="article-share-link">Share</a>
       
       
     </footer>
